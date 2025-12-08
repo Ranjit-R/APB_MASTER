@@ -1,4 +1,4 @@
-ude "defines.svh"
+`include "defines.svh"
 import uvm_pkg::*;
 
 class apb_sequencer extends uvm_sequencer #(apb_seq_item);
@@ -10,4 +10,5 @@ class apb_sequencer extends uvm_sequencer #(apb_seq_item);
   endfunction
 
 endclass
+
 

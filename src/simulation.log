@@ -1,0 +1,468 @@
+# vsim -vopt work.top -voptargs="+acc=npr" -assertdebug -l simulation.log -coverage -wlf waves.wlf -c -do "log -r /*; add wave -r /*; run -all;      coverage save -onexit -assert -directive -cvg -codeAll coverage.ucdb; exit" 
+# Start time: 12:38:11 on Dec 08,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 1 FSM in module "apb_master(fast)".
+# ** Warning: APB_sequence.sv(47): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: APB_sequence.sv(61): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: APB_sequence.sv(76): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: APB_sequence.sv(92): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: APB_sequence.sv(106): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: APB_sequence.sv(122): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: APB_sequence.sv(125): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: APB_sequence.sv(128): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: APB_sequence.sv(141): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: APB_sequence.sv(159): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: APB_sequence.sv(177): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: APB_sequence.sv(190): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# ** Warning: APB_driver.sv(81): (vopt-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.apb_if(fast)
+# Loading work.uvm_pkg(fast)
+# Loading work.apb_pkg(fast)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.top(fast)
+# Loading work.apb_if(fast)
+# Loading work.apb_master(fast)
+# Loading work.apb_master_assertions(fast)
+# log -r /*
+#  add wave -r /*
+#  run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test apb_regression_test...
+# UVM_INFO APB_test.sv(72) @ 0: uvm_test_top [
+# 
+#  *** REG] Running TC1 *** 
+# 
+# UVM_INFO APB_scoreboard.sv(61) @ 35: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x0,  READ, Data=0x0, PSTRB=0x0, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 45: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x0,  READ, Data=0x0, PSTRB=0x0, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 55: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xd8,  READ, Data=0xa, PSTRB=0x4, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 65: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xd8,  READ, Data=0xa, PSTRB=0x4, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 75: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xd8,  READ, Data=0xa, PSTRB=0x4, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 85: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xd8,  READ, Data=0xa, PSTRB=0x4, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 95: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xd8,  READ, Data=0xa, PSTRB=0x4, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 105: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x6c, WRITE, Data=0x7561fab5, PSTRB=0xb, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 115: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x6c, WRITE, Data=0x7561fab5, PSTRB=0xb, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 125: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x6c, WRITE, Data=0x7561fab5, PSTRB=0xb, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 135: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x6c, WRITE, Data=0x7561fab5, PSTRB=0xb, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 145: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x6c, WRITE, Data=0x7561fab5, PSTRB=0xb, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 155: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x6c, WRITE, Data=0x7561fab5, PSTRB=0xb, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 165: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x61, WRITE, Data=0x1e270a93, PSTRB=0x6, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 175: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x61, WRITE, Data=0x1e270a93, PSTRB=0x6, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 185: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x61, WRITE, Data=0x1e270a93, PSTRB=0x6, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 195: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x61, WRITE, Data=0x1e270a93, PSTRB=0x6, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 205: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x61, WRITE, Data=0x1e270a93, PSTRB=0x6, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 215: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x61, WRITE, Data=0x1e270a93, PSTRB=0x6, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 225: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x55, WRITE, Data=0x65576729, PSTRB=0x7, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 235: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x55, WRITE, Data=0x65576729, PSTRB=0x7, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 245: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x55, WRITE, Data=0x65576729, PSTRB=0x7, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 255: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x55, WRITE, Data=0x65576729, PSTRB=0x7, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 265: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x55, WRITE, Data=0x65576729, PSTRB=0x7, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 275: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x46, WRITE, Data=0x8da21640, PSTRB=0x6, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 285: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x46, WRITE, Data=0x8da21640, PSTRB=0x6, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 295: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x46, WRITE, Data=0x8da21640, PSTRB=0x6, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 305: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x46, WRITE, Data=0x8da21640, PSTRB=0x6, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 315: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x46, WRITE, Data=0x8da21640, PSTRB=0x6, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 325: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xa2, WRITE, Data=0x7fea58d6, PSTRB=0x8, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 335: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xa2, WRITE, Data=0x7fea58d6, PSTRB=0x8, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 345: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xa2, WRITE, Data=0x7fea58d6, PSTRB=0x8, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 355: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xa2, WRITE, Data=0x7fea58d6, PSTRB=0x8, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 365: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xa2, WRITE, Data=0x7fea58d6, PSTRB=0x8, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 375: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xa2, WRITE, Data=0x7fea58d6, PSTRB=0x8, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 385: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xe3,  READ, Data=0xa, PSTRB=0x4, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 395: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xe3,  READ, Data=0xa, PSTRB=0x4, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 405: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xe3,  READ, Data=0xa, PSTRB=0x4, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 415: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xe3,  READ, Data=0xa, PSTRB=0x4, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 425: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xe3,  READ, Data=0xa, PSTRB=0x4, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 435: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x6b,  READ, Data=0xa, PSTRB=0x1, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 445: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x6b,  READ, Data=0xa, PSTRB=0x1, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 455: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x6b,  READ, Data=0xa, PSTRB=0x1, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 465: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x6b,  READ, Data=0xa, PSTRB=0x1, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 475: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x6b,  READ, Data=0xa, PSTRB=0x1, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 485: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x6b,  READ, Data=0xa, PSTRB=0x1, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 495: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x6b,  READ, Data=0xa, PSTRB=0x1, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 505: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x6b,  READ, Data=0xa, PSTRB=0x1, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 515: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xfe,  READ, Data=0xa, PSTRB=0x8, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 525: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xfe,  READ, Data=0xa, PSTRB=0x8, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 535: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xfe,  READ, Data=0xa, PSTRB=0x8, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 545: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xfe,  READ, Data=0xa, PSTRB=0x8, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 555: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xfe,  READ, Data=0xa, PSTRB=0x8, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 565: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xfe,  READ, Data=0xa, PSTRB=0x8, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 575: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xd7,  READ, Data=0xa, PSTRB=0xd, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 585: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xd7,  READ, Data=0xa, PSTRB=0xd, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 595: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xd7,  READ, Data=0xa, PSTRB=0xd, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 605: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xd7,  READ, Data=0xa, PSTRB=0xd, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 615: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xd7,  READ, Data=0xa, PSTRB=0xd, transfer=0, transfer_done=0
+# UVM_INFO APB_test.sv(75) @ 615: uvm_test_top [
+# 
+#  *** REG] Running TC2 *** 
+# 
+# UVM_INFO APB_scoreboard.sv(61) @ 625: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xd7,  READ, Data=0xa, PSTRB=0xd, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 635: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x43, WRITE, Data=0xad364f16, PSTRB=0x3, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 635: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x0, PSEL=0, PENABLE=0, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(123) @ 645: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x43, PSEL=1, PENABLE=0, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 645: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x43, WRITE, Data=0xad364f16, PSTRB=0x3, transfer=1, transfer_done=0
+# ** Error: Protocol Error: PSEL didn't assert after Transfer at time 645
+#    Time: 645 ns Started: 635 ns  Scope: top.duv.all_inst File: apb_protocol_checker.sv Line: 14 Expr: vif.PSEL
+# UVM_INFO APB_scoreboard.sv(61) @ 655: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x43, WRITE, Data=0xad364f16, PSTRB=0x3, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 655: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x43, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(123) @ 665: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x43, PSEL=1, PENABLE=1, PREADY=1, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 665: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x43, WRITE, Data=0xad364f16, PSTRB=0x3, transfer=1, transfer_done=1
+# UVM_INFO APB_scoreboard.sv(165) @ 665: uvm_test_top.env.scb [SCB] PASS - WRITE | Addr: 0x43 | Data: 0xad364f16 | PSTRB: 0x3
+# UVM_INFO APB_scoreboard.sv(61) @ 675: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x43, WRITE, Data=0xad364f16, PSTRB=0x3, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 685: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x43, PSEL=0, PENABLE=0, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 685: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2d, WRITE, Data=0x4a20e344, PSTRB=0x2, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 695: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2d, WRITE, Data=0x4a20e344, PSTRB=0x2, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 695: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2d, PSEL=1, PENABLE=0, PREADY=0, PWRITE=1
+# ** Error: Protocol Error: PSEL didn't assert after Transfer at time 695
+#    Time: 695 ns Started: 685 ns  Scope: top.duv.all_inst File: apb_protocol_checker.sv Line: 14 Expr: vif.PSEL
+# UVM_INFO APB_scoreboard.sv(123) @ 705: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2d, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 705: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2d, WRITE, Data=0x4a20e344, PSTRB=0x2, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 715: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2d, WRITE, Data=0x4a20e344, PSTRB=0x2, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 715: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2d, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(123) @ 725: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2d, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 725: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2d, WRITE, Data=0x4a20e344, PSTRB=0x2, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 735: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2d, WRITE, Data=0x4a20e344, PSTRB=0x2, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 735: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2d, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(123) @ 745: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2d, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 745: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2d, WRITE, Data=0x4a20e344, PSTRB=0x2, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 755: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2d, WRITE, Data=0x4a20e344, PSTRB=0x2, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 755: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2d, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(123) @ 765: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2d, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 765: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2d, WRITE, Data=0x4a20e344, PSTRB=0x2, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 775: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2d, WRITE, Data=0x4a20e344, PSTRB=0x2, transfer=1, transfer_done=1
+# UVM_INFO APB_scoreboard.sv(123) @ 775: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2d, PSEL=1, PENABLE=1, PREADY=1, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(165) @ 775: uvm_test_top.env.scb [SCB] PASS - WRITE | Addr: 0x2d | Data: 0x4a20e344 | PSTRB: 0x2
+# UVM_INFO APB_scoreboard.sv(61) @ 785: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2d, WRITE, Data=0x4a20e344, PSTRB=0x2, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 795: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x95, WRITE, Data=0xea06731f, PSTRB=0xb, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 795: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2d, PSEL=0, PENABLE=0, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(123) @ 805: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x95, PSEL=1, PENABLE=0, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 805: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x95, WRITE, Data=0xea06731f, PSTRB=0xb, transfer=1, transfer_done=0
+# ** Error: Protocol Error: PSEL didn't assert after Transfer at time 805
+#    Time: 805 ns Started: 795 ns  Scope: top.duv.all_inst File: apb_protocol_checker.sv Line: 14 Expr: vif.PSEL
+# UVM_INFO APB_scoreboard.sv(61) @ 815: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x95, WRITE, Data=0xea06731f, PSTRB=0xb, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 815: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x95, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(123) @ 825: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x95, PSEL=1, PENABLE=1, PREADY=1, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 825: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x95, WRITE, Data=0xea06731f, PSTRB=0xb, transfer=1, transfer_done=1
+# UVM_INFO APB_scoreboard.sv(165) @ 825: uvm_test_top.env.scb [SCB] PASS - WRITE | Addr: 0x95 | Data: 0xea06731f | PSTRB: 0xb
+# UVM_INFO APB_scoreboard.sv(61) @ 835: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x95, WRITE, Data=0xea06731f, PSTRB=0xb, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 845: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x95, PSEL=0, PENABLE=0, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 845: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xd2, WRITE, Data=0x6a95dd86, PSTRB=0x0, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 855: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xd2, WRITE, Data=0x6a95dd86, PSTRB=0x0, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 855: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xd2, PSEL=1, PENABLE=0, PREADY=0, PWRITE=1
+# ** Error: Protocol Error: PSEL didn't assert after Transfer at time 855
+#    Time: 855 ns Started: 845 ns  Scope: top.duv.all_inst File: apb_protocol_checker.sv Line: 14 Expr: vif.PSEL
+# UVM_INFO APB_scoreboard.sv(123) @ 865: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xd2, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 865: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xd2, WRITE, Data=0x6a95dd86, PSTRB=0x0, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 875: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xd2, WRITE, Data=0x6a95dd86, PSTRB=0x0, transfer=1, transfer_done=1
+# UVM_INFO APB_scoreboard.sv(123) @ 875: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xd2, PSEL=1, PENABLE=1, PREADY=1, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(165) @ 875: uvm_test_top.env.scb [SCB] PASS - WRITE | Addr: 0xd2 | Data: 0x6a95dd86 | PSTRB: 0x0
+# UVM_INFO APB_scoreboard.sv(61) @ 885: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xd2, WRITE, Data=0x6a95dd86, PSTRB=0x0, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 895: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xba, WRITE, Data=0xc213ce72, PSTRB=0x5, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 895: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xd2, PSEL=0, PENABLE=0, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(123) @ 905: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xba, PSEL=1, PENABLE=0, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 905: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xba, WRITE, Data=0xc213ce72, PSTRB=0x5, transfer=1, transfer_done=0
+# ** Error: Protocol Error: PSEL didn't assert after Transfer at time 905
+#    Time: 905 ns Started: 895 ns  Scope: top.duv.all_inst File: apb_protocol_checker.sv Line: 14 Expr: vif.PSEL
+# UVM_INFO APB_scoreboard.sv(61) @ 915: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xba, WRITE, Data=0xc213ce72, PSTRB=0x5, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 915: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xba, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(123) @ 925: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xba, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 925: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xba, WRITE, Data=0xc213ce72, PSTRB=0x5, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 935: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xba, WRITE, Data=0xc213ce72, PSTRB=0x5, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 935: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xba, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(123) @ 945: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xba, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 945: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xba, WRITE, Data=0xc213ce72, PSTRB=0x5, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 955: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xba, WRITE, Data=0xc213ce72, PSTRB=0x5, transfer=1, transfer_done=1
+# UVM_INFO APB_scoreboard.sv(123) @ 955: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xba, PSEL=1, PENABLE=1, PREADY=1, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(165) @ 955: uvm_test_top.env.scb [SCB] PASS - WRITE | Addr: 0xba | Data: 0xc213ce72 | PSTRB: 0x5
+# UVM_INFO APB_scoreboard.sv(61) @ 965: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xba, WRITE, Data=0xc213ce72, PSTRB=0x5, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 975: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xbb, WRITE, Data=0xb3734e14, PSTRB=0x6, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 975: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xba, PSEL=0, PENABLE=0, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(123) @ 985: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xbb, PSEL=1, PENABLE=0, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 985: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xbb, WRITE, Data=0xb3734e14, PSTRB=0x6, transfer=1, transfer_done=0
+# ** Error: Protocol Error: PSEL didn't assert after Transfer at time 985
+#    Time: 985 ns Started: 975 ns  Scope: top.duv.all_inst File: apb_protocol_checker.sv Line: 14 Expr: vif.PSEL
+# UVM_INFO APB_scoreboard.sv(61) @ 995: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xbb, WRITE, Data=0xb3734e14, PSTRB=0x6, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 995: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xbb, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(123) @ 1005: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xbb, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 1005: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xbb, WRITE, Data=0xb3734e14, PSTRB=0x6, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1015: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xbb, WRITE, Data=0xb3734e14, PSTRB=0x6, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1015: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xbb, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(123) @ 1025: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xbb, PSEL=1, PENABLE=1, PREADY=1, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 1025: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xbb, WRITE, Data=0xb3734e14, PSTRB=0x6, transfer=1, transfer_done=1
+# UVM_INFO APB_scoreboard.sv(165) @ 1025: uvm_test_top.env.scb [SCB] PASS - WRITE | Addr: 0xbb | Data: 0xb3734e14 | PSTRB: 0x6
+# UVM_INFO APB_scoreboard.sv(61) @ 1035: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xbb, WRITE, Data=0xb3734e14, PSTRB=0x6, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1045: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xbb, PSEL=0, PENABLE=0, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 1045: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2a, WRITE, Data=0xd802ba0a, PSTRB=0x4, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1055: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2a, WRITE, Data=0xd802ba0a, PSTRB=0x4, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1055: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2a, PSEL=1, PENABLE=0, PREADY=0, PWRITE=1
+# ** Error: Protocol Error: PSEL didn't assert after Transfer at time 1055
+#    Time: 1055 ns Started: 1045 ns  Scope: top.duv.all_inst File: apb_protocol_checker.sv Line: 14 Expr: vif.PSEL
+# UVM_INFO APB_scoreboard.sv(123) @ 1065: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2a, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 1065: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2a, WRITE, Data=0xd802ba0a, PSTRB=0x4, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1075: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2a, WRITE, Data=0xd802ba0a, PSTRB=0x4, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1075: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2a, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(123) @ 1085: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2a, PSEL=1, PENABLE=1, PREADY=1, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 1085: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2a, WRITE, Data=0xd802ba0a, PSTRB=0x4, transfer=1, transfer_done=1
+# UVM_INFO APB_scoreboard.sv(165) @ 1085: uvm_test_top.env.scb [SCB] PASS - WRITE | Addr: 0x2a | Data: 0xd802ba0a | PSTRB: 0x4
+# UVM_INFO APB_scoreboard.sv(61) @ 1095: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2a, WRITE, Data=0xd802ba0a, PSTRB=0x4, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1105: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2a, PSEL=0, PENABLE=0, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 1105: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x5a, WRITE, Data=0xcfe345b2, PSTRB=0x0, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1115: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x5a, WRITE, Data=0xcfe345b2, PSTRB=0x0, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1115: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x5a, PSEL=1, PENABLE=0, PREADY=0, PWRITE=1
+# ** Error: Protocol Error: PSEL didn't assert after Transfer at time 1115
+#    Time: 1115 ns Started: 1105 ns  Scope: top.duv.all_inst File: apb_protocol_checker.sv Line: 14 Expr: vif.PSEL
+# UVM_INFO APB_scoreboard.sv(123) @ 1125: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x5a, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 1125: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x5a, WRITE, Data=0xcfe345b2, PSTRB=0x0, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1135: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x5a, WRITE, Data=0xcfe345b2, PSTRB=0x0, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1135: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x5a, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(123) @ 1145: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x5a, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 1145: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x5a, WRITE, Data=0xcfe345b2, PSTRB=0x0, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1155: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x5a, WRITE, Data=0xcfe345b2, PSTRB=0x0, transfer=1, transfer_done=1
+# UVM_INFO APB_scoreboard.sv(123) @ 1155: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x5a, PSEL=1, PENABLE=1, PREADY=1, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(165) @ 1155: uvm_test_top.env.scb [SCB] PASS - WRITE | Addr: 0x5a | Data: 0xcfe345b2 | PSTRB: 0x0
+# UVM_INFO APB_scoreboard.sv(61) @ 1165: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x5a, WRITE, Data=0xcfe345b2, PSTRB=0x0, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1175: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x87, WRITE, Data=0x9dcef573, PSTRB=0x1, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1175: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x5a, PSEL=0, PENABLE=0, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(123) @ 1185: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x87, PSEL=1, PENABLE=0, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 1185: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x87, WRITE, Data=0x9dcef573, PSTRB=0x1, transfer=1, transfer_done=0
+# ** Error: Protocol Error: PSEL didn't assert after Transfer at time 1185
+#    Time: 1185 ns Started: 1175 ns  Scope: top.duv.all_inst File: apb_protocol_checker.sv Line: 14 Expr: vif.PSEL
+# UVM_INFO APB_scoreboard.sv(61) @ 1195: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x87, WRITE, Data=0x9dcef573, PSTRB=0x1, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1195: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x87, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(123) @ 1205: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x87, PSEL=1, PENABLE=1, PREADY=1, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 1205: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x87, WRITE, Data=0x9dcef573, PSTRB=0x1, transfer=1, transfer_done=1
+# UVM_INFO APB_scoreboard.sv(165) @ 1205: uvm_test_top.env.scb [SCB] PASS - WRITE | Addr: 0x87 | Data: 0x9dcef573 | PSTRB: 0x1
+# UVM_INFO APB_scoreboard.sv(61) @ 1215: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x87, WRITE, Data=0x9dcef573, PSTRB=0x1, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1225: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x87, PSEL=0, PENABLE=0, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 1225: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x99, WRITE, Data=0xedf4dce, PSTRB=0x4, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1235: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x99, WRITE, Data=0xedf4dce, PSTRB=0x4, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1235: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x99, PSEL=1, PENABLE=0, PREADY=0, PWRITE=1
+# ** Error: Protocol Error: PSEL didn't assert after Transfer at time 1235
+#    Time: 1235 ns Started: 1225 ns  Scope: top.duv.all_inst File: apb_protocol_checker.sv Line: 14 Expr: vif.PSEL
+# UVM_INFO APB_scoreboard.sv(123) @ 1245: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x99, PSEL=1, PENABLE=1, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(61) @ 1245: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x99, WRITE, Data=0xedf4dce, PSTRB=0x4, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1255: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x99, WRITE, Data=0xedf4dce, PSTRB=0x4, transfer=1, transfer_done=1
+# UVM_INFO APB_scoreboard.sv(123) @ 1255: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x99, PSEL=1, PENABLE=1, PREADY=1, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(165) @ 1255: uvm_test_top.env.scb [SCB] PASS - WRITE | Addr: 0x99 | Data: 0xedf4dce | PSTRB: 0x4
+# UVM_INFO APB_test.sv(78) @ 1265: uvm_test_top [
+# 
+#  *** REG] Running TC3 *** 
+# 
+# UVM_INFO APB_scoreboard.sv(61) @ 1265: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x99, WRITE, Data=0xedf4dce, PSTRB=0x4, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1275: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xee,  READ, Data=0xa, PSTRB=0x7, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1275: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x99, PSEL=0, PENABLE=0, PREADY=0, PWRITE=1
+# UVM_INFO APB_scoreboard.sv(123) @ 1285: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xee, PSEL=1, PENABLE=0, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1285: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xee,  READ, Data=0xa, PSTRB=0x7, transfer=1, transfer_done=0
+# ** Error: Protocol Error: PSEL didn't assert after Transfer at time 1285
+#    Time: 1285 ns Started: 1275 ns  Scope: top.duv.all_inst File: apb_protocol_checker.sv Line: 14 Expr: vif.PSEL
+# UVM_INFO APB_scoreboard.sv(61) @ 1295: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xee,  READ, Data=0xa, PSTRB=0x7, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1295: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xee, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1305: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xee, PSEL=1, PENABLE=1, PREADY=1, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1305: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xee,  READ, Data=0xa, PSTRB=0x7, transfer=1, transfer_done=1
+# UVM_INFO APB_scoreboard.sv(165) @ 1305: uvm_test_top.env.scb [SCB] PASS - READ | Addr: 0xee | Data: 0xa
+# UVM_INFO APB_scoreboard.sv(61) @ 1315: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xee,  READ, Data=0xa, PSTRB=0x7, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1325: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xee, PSEL=0, PENABLE=0, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1325: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x88,  READ, Data=0xa, PSTRB=0xa, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1335: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x88,  READ, Data=0xa, PSTRB=0xa, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1335: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x88, PSEL=1, PENABLE=0, PREADY=0, PWRITE=0
+# ** Error: Protocol Error: PSEL didn't assert after Transfer at time 1335
+#    Time: 1335 ns Started: 1325 ns  Scope: top.duv.all_inst File: apb_protocol_checker.sv Line: 14 Expr: vif.PSEL
+# UVM_INFO APB_scoreboard.sv(123) @ 1345: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x88, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1345: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x88,  READ, Data=0xa, PSTRB=0xa, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1355: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x88,  READ, Data=0xa, PSTRB=0xa, transfer=1, transfer_done=1
+# UVM_INFO APB_scoreboard.sv(123) @ 1355: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x88, PSEL=1, PENABLE=1, PREADY=1, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(165) @ 1355: uvm_test_top.env.scb [SCB] PASS - READ | Addr: 0x88 | Data: 0xa
+# UVM_INFO APB_scoreboard.sv(61) @ 1365: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x88,  READ, Data=0xa, PSTRB=0xa, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1375: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x9b,  READ, Data=0xa, PSTRB=0x6, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1375: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x88, PSEL=0, PENABLE=0, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1385: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x9b, PSEL=1, PENABLE=0, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1385: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x9b,  READ, Data=0xa, PSTRB=0x6, transfer=1, transfer_done=0
+# ** Error: Protocol Error: PSEL didn't assert after Transfer at time 1385
+#    Time: 1385 ns Started: 1375 ns  Scope: top.duv.all_inst File: apb_protocol_checker.sv Line: 14 Expr: vif.PSEL
+# UVM_INFO APB_scoreboard.sv(61) @ 1395: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x9b,  READ, Data=0xa, PSTRB=0x6, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1395: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x9b, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1405: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x9b, PSEL=1, PENABLE=1, PREADY=1, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1405: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x9b,  READ, Data=0xa, PSTRB=0x6, transfer=1, transfer_done=1
+# UVM_INFO APB_scoreboard.sv(165) @ 1405: uvm_test_top.env.scb [SCB] PASS - READ | Addr: 0x9b | Data: 0xa
+# UVM_INFO APB_scoreboard.sv(61) @ 1415: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x9b,  READ, Data=0xa, PSTRB=0x6, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1425: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x9b, PSEL=0, PENABLE=0, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1425: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x33,  READ, Data=0xa, PSTRB=0x7, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1435: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x33,  READ, Data=0xa, PSTRB=0x7, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1435: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x33, PSEL=1, PENABLE=0, PREADY=0, PWRITE=0
+# ** Error: Protocol Error: PSEL didn't assert after Transfer at time 1435
+#    Time: 1435 ns Started: 1425 ns  Scope: top.duv.all_inst File: apb_protocol_checker.sv Line: 14 Expr: vif.PSEL
+# UVM_INFO APB_scoreboard.sv(123) @ 1445: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x33, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1445: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x33,  READ, Data=0xa, PSTRB=0x7, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1455: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x33,  READ, Data=0xa, PSTRB=0x7, transfer=1, transfer_done=1
+# UVM_INFO APB_scoreboard.sv(123) @ 1455: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x33, PSEL=1, PENABLE=1, PREADY=1, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(165) @ 1455: uvm_test_top.env.scb [SCB] PASS - READ | Addr: 0x33 | Data: 0xa
+# UVM_INFO APB_scoreboard.sv(61) @ 1465: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x33,  READ, Data=0xa, PSTRB=0x7, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1475: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2f,  READ, Data=0xa, PSTRB=0x9, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1475: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x33, PSEL=0, PENABLE=0, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1485: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2f, PSEL=1, PENABLE=0, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1485: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2f,  READ, Data=0xa, PSTRB=0x9, transfer=1, transfer_done=0
+# ** Error: Protocol Error: PSEL didn't assert after Transfer at time 1485
+#    Time: 1485 ns Started: 1475 ns  Scope: top.duv.all_inst File: apb_protocol_checker.sv Line: 14 Expr: vif.PSEL
+# UVM_INFO APB_scoreboard.sv(61) @ 1495: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2f,  READ, Data=0xa, PSTRB=0x9, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1495: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2f, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1505: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2f, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1505: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2f,  READ, Data=0xa, PSTRB=0x9, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1515: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2f,  READ, Data=0xa, PSTRB=0x9, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1515: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2f, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1525: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2f, PSEL=1, PENABLE=1, PREADY=1, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1525: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2f,  READ, Data=0xa, PSTRB=0x9, transfer=1, transfer_done=1
+# UVM_INFO APB_scoreboard.sv(165) @ 1525: uvm_test_top.env.scb [SCB] PASS - READ | Addr: 0x2f | Data: 0xa
+# UVM_INFO APB_scoreboard.sv(61) @ 1535: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x2f,  READ, Data=0xa, PSTRB=0x9, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1545: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x2f, PSEL=0, PENABLE=0, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1545: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x8a,  READ, Data=0xa, PSTRB=0x7, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1555: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x8a,  READ, Data=0xa, PSTRB=0x7, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1555: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x8a, PSEL=1, PENABLE=0, PREADY=0, PWRITE=0
+# ** Error: Protocol Error: PSEL didn't assert after Transfer at time 1555
+#    Time: 1555 ns Started: 1545 ns  Scope: top.duv.all_inst File: apb_protocol_checker.sv Line: 14 Expr: vif.PSEL
+# UVM_INFO APB_scoreboard.sv(123) @ 1565: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x8a, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1565: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x8a,  READ, Data=0xa, PSTRB=0x7, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1575: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x8a,  READ, Data=0xa, PSTRB=0x7, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1575: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x8a, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1585: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x8a, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1585: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x8a,  READ, Data=0xa, PSTRB=0x7, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1595: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x8a,  READ, Data=0xa, PSTRB=0x7, transfer=1, transfer_done=1
+# UVM_INFO APB_scoreboard.sv(123) @ 1595: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x8a, PSEL=1, PENABLE=1, PREADY=1, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(165) @ 1595: uvm_test_top.env.scb [SCB] PASS - READ | Addr: 0x8a | Data: 0xa
+# UVM_INFO APB_scoreboard.sv(61) @ 1605: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x8a,  READ, Data=0xa, PSTRB=0x7, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1615: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x7,  READ, Data=0xa, PSTRB=0xb, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1615: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x8a, PSEL=0, PENABLE=0, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1625: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x7, PSEL=1, PENABLE=0, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1625: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x7,  READ, Data=0xa, PSTRB=0xb, transfer=1, transfer_done=0
+# ** Error: Protocol Error: PSEL didn't assert after Transfer at time 1625
+#    Time: 1625 ns Started: 1615 ns  Scope: top.duv.all_inst File: apb_protocol_checker.sv Line: 14 Expr: vif.PSEL
+# UVM_INFO APB_scoreboard.sv(61) @ 1635: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x7,  READ, Data=0xa, PSTRB=0xb, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1635: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x7, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1645: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x7, PSEL=1, PENABLE=1, PREADY=1, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1645: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x7,  READ, Data=0xa, PSTRB=0xb, transfer=1, transfer_done=1
+# UVM_INFO APB_scoreboard.sv(165) @ 1645: uvm_test_top.env.scb [SCB] PASS - READ | Addr: 0x7 | Data: 0xa
+# UVM_INFO APB_scoreboard.sv(61) @ 1655: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x7,  READ, Data=0xa, PSTRB=0xb, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1665: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x7, PSEL=0, PENABLE=0, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1665: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x89,  READ, Data=0xa, PSTRB=0x4, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1675: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x89,  READ, Data=0xa, PSTRB=0x4, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1675: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x89, PSEL=1, PENABLE=0, PREADY=0, PWRITE=0
+# ** Error: Protocol Error: PSEL didn't assert after Transfer at time 1675
+#    Time: 1675 ns Started: 1665 ns  Scope: top.duv.all_inst File: apb_protocol_checker.sv Line: 14 Expr: vif.PSEL
+# UVM_INFO APB_scoreboard.sv(123) @ 1685: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x89, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1685: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x89,  READ, Data=0xa, PSTRB=0x4, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1695: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x89,  READ, Data=0xa, PSTRB=0x4, transfer=1, transfer_done=1
+# UVM_INFO APB_scoreboard.sv(123) @ 1695: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x89, PSEL=1, PENABLE=1, PREADY=1, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(165) @ 1695: uvm_test_top.env.scb [SCB] PASS - READ | Addr: 0x89 | Data: 0xa
+# UVM_INFO APB_scoreboard.sv(61) @ 1705: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x89,  READ, Data=0xa, PSTRB=0x4, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1715: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x7a,  READ, Data=0xa, PSTRB=0xa, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1715: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x89, PSEL=0, PENABLE=0, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1725: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x7a, PSEL=1, PENABLE=0, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1725: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x7a,  READ, Data=0xa, PSTRB=0xa, transfer=1, transfer_done=0
+# ** Error: Protocol Error: PSEL didn't assert after Transfer at time 1725
+#    Time: 1725 ns Started: 1715 ns  Scope: top.duv.all_inst File: apb_protocol_checker.sv Line: 14 Expr: vif.PSEL
+# UVM_INFO APB_scoreboard.sv(61) @ 1735: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x7a,  READ, Data=0xa, PSTRB=0xa, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1735: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x7a, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1745: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x7a, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1745: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x7a,  READ, Data=0xa, PSTRB=0xa, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1755: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x7a,  READ, Data=0xa, PSTRB=0xa, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1755: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x7a, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1765: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x7a, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1765: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x7a,  READ, Data=0xa, PSTRB=0xa, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1775: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x7a,  READ, Data=0xa, PSTRB=0xa, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1775: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x7a, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1785: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x7a, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1785: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x7a,  READ, Data=0xa, PSTRB=0xa, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1795: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x7a,  READ, Data=0xa, PSTRB=0xa, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1795: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x7a, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1805: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x7a, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1805: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x7a,  READ, Data=0xa, PSTRB=0xa, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1815: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x7a,  READ, Data=0xa, PSTRB=0xa, transfer=1, transfer_done=1
+# UVM_INFO APB_scoreboard.sv(123) @ 1815: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x7a, PSEL=1, PENABLE=1, PREADY=1, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(165) @ 1815: uvm_test_top.env.scb [SCB] PASS - READ | Addr: 0x7a | Data: 0xa
+# UVM_INFO APB_scoreboard.sv(61) @ 1825: uvm_test_top.env.scb [SCB_IN] Input: Addr=0x7a,  READ, Data=0xa, PSTRB=0xa, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1835: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xc5,  READ, Data=0xa, PSTRB=0xf, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1835: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0x7a, PSEL=0, PENABLE=0, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1845: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xc5, PSEL=1, PENABLE=0, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1845: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xc5,  READ, Data=0xa, PSTRB=0xf, transfer=1, transfer_done=0
+# ** Error: Protocol Error: PSEL didn't assert after Transfer at time 1845
+#    Time: 1845 ns Started: 1835 ns  Scope: top.duv.all_inst File: apb_protocol_checker.sv Line: 14 Expr: vif.PSEL
+# UVM_INFO APB_scoreboard.sv(61) @ 1855: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xc5,  READ, Data=0xa, PSTRB=0xf, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1855: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xc5, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(123) @ 1865: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xc5, PSEL=1, PENABLE=1, PREADY=0, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1865: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xc5,  READ, Data=0xa, PSTRB=0xf, transfer=1, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1875: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xc5,  READ, Data=0xa, PSTRB=0xf, transfer=1, transfer_done=1
+# UVM_INFO APB_scoreboard.sv(123) @ 1875: uvm_test_top.env.scb [SCB_OUT] Output: Addr=0xc5, PSEL=1, PENABLE=1, PREADY=1, PWRITE=0
+# UVM_INFO APB_scoreboard.sv(165) @ 1875: uvm_test_top.env.scb [SCB] PASS - READ | Addr: 0xc5 | Data: 0xa
+# UVM_INFO APB_scoreboard.sv(61) @ 1885: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xc5,  READ, Data=0xa, PSTRB=0xf, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1895: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xc5,  READ, Data=0xa, PSTRB=0xf, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1905: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xc5,  READ, Data=0xa, PSTRB=0xf, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1915: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xc5,  READ, Data=0xa, PSTRB=0xf, transfer=0, transfer_done=0
+# UVM_INFO APB_scoreboard.sv(61) @ 1925: uvm_test_top.env.scb [SCB_IN] Input: Addr=0xc5,  READ, Data=0xa, PSTRB=0xf, transfer=0, transfer_done=0
+# UVM_INFO /tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 1935: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO APB_scoreboard.sv(203) @ 1935: uvm_test_top.env.scb [SCOREBOARD] 
+# ========================================
+#         SCOREBOARD RESULTS
+# ========================================
+#   Total Checks  : 20
+#   Passed        : 20
+#   Failed        : 0
+#   Pass Rate     : 100.00%
+# ========================================
+# 
+# UVM_INFO APB_scoreboard.sv(208) @ 1935: uvm_test_top.env.scb [SCOREBOARD] ALL TESTS PASSED!
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  323
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [
+# 
+#  *** REG]     3
+# [RNTST]     1
+# [SCB]    20
+# [SCB_IN]   190
+# [SCB_OUT]   106
+# [SCOREBOARD]     2
+# [TEST_DONE]     1
+# ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 1935 ns  Iteration: 53  Instance: /top
+# End time: 12:38:24 on Dec 08,2025, Elapsed time: 0:00:13
+# Errors: 20, Warnings: 13

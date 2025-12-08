@@ -25,14 +25,11 @@ interface apb_if #(parameter ADDR_WIDTH = 8,
   logic                    error;
 
   clocking cb_drv @(posedge PCLK);
-    default input #0 output #0;
+    default input #1step output #0;
 
-    output PADDR, PSEL, PENABLE, PWRITE;
-    output PWDATA, PSTRB;
-
-    output transfer, write_read, addr_in, wdata_in, strb_in;
+   output transfer, write_read, addr_in, wdata_in, strb_in;
     
-    input  PRDATA, PREADY, PSLVERR;
+    output  PRDATA, PREADY, PSLVERR;
     input  rdata_out, transfer_done, error;
   endclocking
 
@@ -52,4 +49,3 @@ interface apb_if #(parameter ADDR_WIDTH = 8,
   modport MONITOR (clocking cb_mon);
 
 endinterface
-

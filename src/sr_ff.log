@@ -1,0 +1,42 @@
+QuestaSim vlog 10.6c Compiler 2017.07 Jul 25 2017
+Start time: 12:38:10 on Dec 08,2025
+vlog "+define+UVM_NO_DPI" -sv "+acc" "+cover" "+fcover" -l sr_ff.log top.sv "+incdir+/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src" 
+-- Compiling package uvm_pkg (uvm-1.1d Built-in)
+-- Compiling package apb_pkg
+-- Importing package uvm_pkg (uvm-1.1d Built-in)
+** Warning: ** while parsing file included at top.sv(3)
+** at APB_sequence.sv(47): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+** Warning: ** while parsing file included at top.sv(3)
+** at APB_sequence.sv(61): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+** Warning: ** while parsing file included at top.sv(3)
+** at APB_sequence.sv(76): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+** Warning: ** while parsing file included at top.sv(3)
+** at APB_sequence.sv(92): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+** Warning: ** while parsing file included at top.sv(3)
+** at APB_sequence.sv(106): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+** Warning: ** while parsing file included at top.sv(3)
+** at APB_sequence.sv(122): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+** Warning: ** while parsing file included at top.sv(3)
+** at APB_sequence.sv(125): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+** Warning: ** while parsing file included at top.sv(3)
+** at APB_sequence.sv(128): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+** Warning: ** while parsing file included at top.sv(3)
+** at APB_sequence.sv(141): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+** Warning: ** while parsing file included at top.sv(3)
+** at APB_sequence.sv(159): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+** Warning: ** while parsing file included at top.sv(3)
+** at APB_sequence.sv(177): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+** Warning: ** while parsing file included at top.sv(3)
+** at APB_sequence.sv(190): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+** Warning: ** while parsing file included at top.sv(3)
+** at APB_driver.sv(81): (vlog-2240) Treating stand-alone use of function 'randomize' as an implicit VOID cast.
+-- Compiling interface apb_if
+-- Compiling module apb_master
+-- Compiling module apb_master_assertions
+-- Compiling module top
+-- Importing package apb_pkg
+
+Top level modules:
+	top
+End time: 12:38:11 on Dec 08,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 13

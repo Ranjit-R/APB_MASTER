@@ -1,4 +1,4 @@
-ude "defines.svh"
+`include "defines.svh"
 
 class apb_subscriber extends uvm_component;
 
@@ -17,7 +17,7 @@ class apb_subscriber extends uvm_component;
 
     cp_pready: coverpoint mon_item.pready { bins rdy[] = {0,1}; }
 
-    cp_write:  coverpoint mon_item.apb_write   { bins wr[] = {0,1}; }
+    /* cp_write:  coverpoint mon_item.apb_write   { bins wr[] = {0,1}; }
 
     cp_addr:   coverpoint mon_item.apb_addr {
                   bins low_addr[]  = {[0:100]};
@@ -39,7 +39,7 @@ class apb_subscriber extends uvm_component;
 
     cp_pslverr: coverpoint mon_item.pslverr { bins err[] = {0,1}; }
 
-    cp_strb:    coverpoint mon_item.apb_strb { bins all_strb[] = {[0:15]}; }
+    cp_strb:    coverpoint mon_item.apb_strb { bins all_strb[] = {[0:15]}; } */
 
   endgroup
 

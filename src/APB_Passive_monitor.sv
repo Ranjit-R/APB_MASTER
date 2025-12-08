@@ -21,28 +21,30 @@ class apb_passive_monitor extends uvm_monitor;
     forever begin
        if(vif.PRESETn == 0) begin
          wait(vif.PRESETn == 1);
+         @(vif.cb_mon);
        end
       @(vif.cb_mon);
+      if( vif.cb_mon.transfer ) begin
+       
+      item = apb_seq_item::type_id::create("item");
 
-       item = apb_seq_item::type_id::create("item");
-
-      item.apb_rdata  = vif.cb_mon.PRDATA;
+      item.paddr  = vif.cb_mon.PADDR;
+      item.psel  = vif.cb_mon.PSEL;
+      item.penable  = vif.cb_mon.PENABLE;
+      item.pwrite  = vif.cb_mon.PWRITE;
+      item.pwdata  = vif.cb_mon.PWDATA;
+      item.pstrb  = vif.cb_mon.PSTRB;
       item.pready     = vif.cb_mon.PREADY;
-      item.pslverr    = vif.cb_mon.PSLVERR;
 
-      item.apb_addr   = vif.cb_mon.addr_in;    
-      item.apb_write  = vif.cb_mon.write_read;
-      item.apb_wdata  = vif.cb_mon.wdata_in;
-      item.apb_strb   = vif.cb_mon.strb_in;
-
-      item.pslverr     = vif.cb_mon.PSLVERR;
-      item.pready      = vif.cb_mon.PREADY;
-
-      
+       item.rdata_out  = vif.cb_mon.rdata_out;
+       item.transfer_done  = vif.cb_mon.transfer_done;
+       item.error  = vif.cb_mon.error;
+      //if( item.transfer_done)
       mon_ap.write(item);
-      item.print();
-      $info(" Passive_Monitor");
+      //item.print_item_output();
+      end
     end
+
   endtask
 
 endclass

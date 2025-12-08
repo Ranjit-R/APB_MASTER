@@ -1,4 +1,4 @@
-ude "defines.svh"
+`include "defines.svh"
 import uvm_pkg::*;
 
 class apb_agent extends uvm_agent;
